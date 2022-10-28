@@ -66,7 +66,7 @@ public class DeviceController {
         ));
     }
     
-    @GetMapping("/{deviceNum}/{vazando}")
+    @GetMapping("/test/{deviceNum}/{vazando}")
     public void testVazando(@PathVariable("deviceNum") Integer deviceNum, @PathVariable("vazando") Integer vazando){
            System.out.println(deviceNum + " : " + vazando);
     } 
