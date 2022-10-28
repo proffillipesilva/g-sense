@@ -65,6 +65,11 @@ public class DeviceController {
                 createDeviceRequestDto.getDeviceInfo()
         ));
     }
+    
+    @GetMapping("/{deviceNum}/{vazando}")
+    public void testVazando(@PathVariable("deviceNum") Integer deviceNum, @PathVariable("vazando") Integer vazando){
+           System.out.println(deviceNum + " : " + vazando);
+    } 
 
     @DeleteMapping("/{deviceId}")
     public void deleteDevice(@PathVariable("deviceId") Integer deviceId) {
